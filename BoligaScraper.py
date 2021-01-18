@@ -69,7 +69,7 @@ def GetBoligInfo(i):
 	bolig=[adresse,Boligpris,Salgsdato,kvm,Rooms,kvmpris,byggeaar,boligtype]
 	return bolig
 
-def Bolig_df(zipfrom,zipto='',property='',salestype='',yearfrom='',yearto=''):
+def GetBoligainfo(zipfrom,zipto='',property='',salestype='',yearfrom='',yearto=''):
 	url=BoligRequirementsUrl(zipfrom=zipfrom,zipto=zipto,property=property,salestype=salestype,yearfrom=yearfrom,yearto=yearto)
 	Boliginfo=[]
 	_LastPage=LastPage(url)
